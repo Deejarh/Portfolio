@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Zilla Slab", serif;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(20, 20, 32);
+  position: fixed;
+  top: 0;
+}
+.container {
+  background-color: rgb(204, 221, 235);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40%;
+  padding-top: 20px;
+}
+
+nav > a {
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: 400;
+  color: rgb(240, 233, 233);
+  padding: 10px;
+  border-radius: 5px;
+}
+a:hover {
+  background-color: rgb(120, 120, 240);
+}
+section.about {
+  margin-top: 100px;
+  border-top: 2px solid rgb(204, 221, 237);
+  height: 700px;
+  background-color: rgb(204, 221, 235);
+}
+.bio-frame {
+  width: 60%;
+  margin: auto;
+}
+div.div-img {
+  border: 3px solid rgb(204, 221, 235);
+}
+.div-about {
+  align-items: center;
+  padding: 10px;
+  font-size: 1.4em;
+}
+header.project {
+  height: 30;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: white;
+}
+@media screen and (max-width: 580px) {
+  /* header.project{
+        margin-top: 350px;
+
+    } */
+  section.about {
+    height: 1100px;
+  }
+  /*     #project-tileframe{
+        padding-bottom: 50px;
+    } */
+}
+#project-tileframe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  height: 850px;
+
+  padding: 10px;
+  border: 5px solid rgb(20, 20, 34);
+}
+a:last-child {
+  text-decoration: none;
+}
+p.desc {
+  color: white;
+  font-size: 1.6em;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+section > h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7em;
+  border-bottom: 1px solid black;
+  border-bottom-style: dashed;
+}
+.skill {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 50px 50px;
+  row-gap: 50px;
+  column-gap: 50px;
+  justify-content: center;
+  font-size: 1.3em;
+}
+.skill > div {
+  background-color: rgb(77, 71, 71);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill > div:hover {
+  background-color: black;
+}
+div.icon {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
