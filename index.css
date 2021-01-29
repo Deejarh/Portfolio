@@ -14,7 +14,6 @@ body {
 
 .header {
   width: 100%;
-  height: 100px;
   background-color: rgb(20, 20, 32);
   position: fixed;
   top: 0;
@@ -26,13 +25,13 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
-  margin-left: 40%;
-  padding-top: 20px;
+  padding: 20px;
+  height: 100px;
 }
 
 nav > a {
   text-decoration: none;
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: 400;
   color: rgb(240, 233, 233);
   padding: 10px;
@@ -42,14 +41,34 @@ a:hover {
   background-color: rgb(120, 120, 240);
 }
 section.about {
-  margin-top: 100px;
   border-top: 2px solid rgb(204, 221, 237);
-  height: 700px;
   background-color: rgb(204, 221, 235);
+  width: 100%;
+  margin-top: 100px;
+  padding: 10px;
 }
 .bio-frame {
-  width: 60%;
+  width: 100%;
   margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .bio-frame {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+  .div-img {
+    width: 40%;
+  }
+  .div-about {
+    width: 40%;
+    font-size: 1.2em;
+  }
+  section.about {
+    margin-bottom: 100px;
+  }
 }
 div.div-img {
   border: 3px solid rgb(204, 221, 235);
@@ -57,7 +76,7 @@ div.div-img {
 .div-about {
   align-items: center;
   padding: 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 header.project {
   height: 30;
@@ -69,48 +88,58 @@ header.project {
   font-weight: 600;
   color: white;
 }
-@media screen and (max-width: 580px) {
-  /* header.project{
-        margin-top: 350px;
+@media screen and (min-width: 550px) {
+  #project-tileframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
 
-    } */
-  section.about {
-    height: 1100px;
+    padding: 10px;
+    border: 5px solid rgb(20, 20, 34);
   }
-  /*     #project-tileframe{
-        padding-bottom: 50px;
-    } */
 }
+
 #project-tileframe {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: black;
-  height: 850px;
+
+  align-items: center;
 
   padding: 10px;
-  border: 5px solid rgb(20, 20, 34);
+
+  padding-left: 30px;
+  border: 5px solid rgb(24, 24, 31);
 }
 a:last-child {
   text-decoration: none;
 }
+a > img {
+  margin: auto;
+}
 p.desc {
-  color: white;
-  font-size: 1.6em;
+  color: rgb(226, 239, 246);
+  font-size: 1.1em;
   justify-content: center;
   display: grid;
   align-items: center;
+  margin-right: 60px;
+}
+p.desc:hover {
+  color: rgb(0, 110, 255);
+  text-decoration: underline;
 }
 
 section > h2 {
   display: flex;
   justify-content: center;
-  font-size: 1.7em;
+  font-size: 1.4em;
   border-bottom: 1px solid black;
   border-bottom-style: dashed;
 }
 .skill {
   display: grid;
-  grid-template-columns: 200px 200px;
+  width: 100%;
+  grid-template-columns: 40% 40%;
   grid-template-rows: 50px 50px;
   row-gap: 50px;
   column-gap: 50px;

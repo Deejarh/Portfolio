@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
     <title>PersonalPortfolio</title>
   </head>
   <body>
@@ -16,49 +22,59 @@
         <nav id="navbar" class="navbar">
           <a href=" #welcome-section">About</a>
           <a href="#projects">Work</a>
-          <a href="profile-link">Contact</a>
+          <a href="#profile-link">Contact</a>
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i> -->
         </nav>
       </header>
       <section id="welcome-section" class="about">
-          <div class="bio-frame">
-
-              <div class="div-img">
-                  <img
-                  src="/Deejarh.jpeg"
-                  alt="Deejarh"
-                  style="width: 300px; height: 300px ;border-radius: 300px;"
-                  />
-                </div>
-                <div class="div-about">
-          <p>
-              
-                  
-                  <strong>Hi!,</strong> i'm Damola K. Badmus, a budding frontend Developer based in Lagos 
-                  Nigeria, with core strength in creating simple and elegant user interfaces for the web platform
-                   using technologies like HTML5, CSS3, Javascript and Git.Also continuously improving on my skills
-                 to ensure that my websites remain legible and visually appealing across a variety of devices.
-                </p>
-                <p>
-                    In my funtime, i catch up on latest trends in fashion. I love nature, so i find myself always 
-                    wanting to visit the beach to enjoy the cool breeze and appreciate nature. Check out some
-                     of my Project
-                </p>
-
-                
-        
+        <div class="bio-frame">
+          <div class="div-img">
+            <img
+              src="/Deejarh.jpeg"
+              alt="Deejarh"
+              style="max-width: 50%; border-radius: 50%"
+            />
+          </div>
+          <div class="div-about">
+            <p>
+              <strong>Hi!,</strong> i'm Damola K. Badmus, a budding frontend
+              Developer based in Lagos Nigeria, with core strength in creating
+              simple and elegant user interfaces for the web platform using
+              technologies like HTML5, CSS3, Javascript and Git.Also
+              continuously improving on my skills to ensure that my websites
+              remain legible and visually appealing across a variety of devices.
+            </p>
+            <p>
+              In my funtime, i catch up on latest trends in fashion. I love
+              nature, so i find myself always wanting to visit the beach to
+              enjoy the cool breeze and appreciate nature. Check out some of my
+              Project
+            </p>
+          </div>
         </div>
-    </div>
       </section>
       <section id="projects">
         <header class="project">This are some of my Project</header>
         <div id="project-tileframe">
+          <div id="project-tile3">
+            <a href="https://landinggpage.netlify.app/">
+              <img
+                id="image"
+                src="landingpage.JPG"
+                alt="project"
+                style="max-width: 80%"
+              />
+              <p class="desc">A product landing page</p>
+            </a>
+          </div>
           <div id="project-tile1">
             <a href="https://tributepagefcc.netlify.app/">
               <img
                 id="image"
                 src="tributepage.JPG"
                 alt="project"
-                style="width: 80%; height: 70%"
+                style="max-width: 80%"
               />
               <p class="desc">A Tribute page.</p>
             </a>
@@ -69,20 +85,9 @@
                 id="image"
                 src="formsurvey.JPG"
                 alt="project"
-                style="width: 80%; height: 70%"
+                style="max-width: 80%"
               />
               <p class="desc">A survey Form</p>
-            </a>
-          </div>
-          <div id="project-tile3">
-            <a href="https://trombonesite.netlify.app/">
-              <img
-                id="image"
-                src="trombonesite.JPG"
-                alt="project"
-                style="width: 80%; height: 70%"
-              />
-              <p class="desc">A product landing page</p>
             </a>
           </div>
           <div id="project-tile4">
@@ -91,7 +96,7 @@
                 id="image"
                 src="documentation.JPG"
                 alt="project"
-                style="width: 80%; height: 70%"
+                style="width: 80%; height: auto"
               />
               <p class="desc">A Technical Documentation page</p>
             </a>
@@ -99,23 +104,29 @@
         </div>
       </section>
       <section id="profile-link">
-          
-          <h2>skills</h2>
-          <div class="skill">
-              <div>HTML5</div>
-              <div>css3</div>
-              <div>Javascript</div>
-              <div>git</div>
-            </div>
+        <h2>skills</h2>
+        <div class="skill">
+          <div>HTML5</div>
+          <div>css3</div>
+          <div>Javascript</div>
+          <div>git</div>
+        </div>
 
-           
-               <h2>GET IN TOUCH</h2>
-           
-           <div   class="icon">
-               <a href="https://github.com/Deejarh">
-                <svg stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 496 512"
-                  height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
-                 <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6
+        <h2>GET IN TOUCH</h2>
+
+        <div class="icon">
+          <a href="https://github.com/Deejarh">
+            <svg
+              stroke="currentColor"
+              fill="black"
+              stroke-width="0"
+              viewBox="0 0 496 512"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6
                   3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 
                   6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 
                   2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0
@@ -129,22 +140,47 @@
                     352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7
                      1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3
                       6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6
-                       0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-            </a>
-               <a href="https://twitter.com/kha_deejarh">
-                <svg stroke="black" fill="black" stroke-width="0" viewBox="0 0 512 512"  
-                height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 
+                       0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/kha_deejarh">
+            <svg
+              stroke="black"
+              fill="black"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 
                 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974
                  16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132
-                     57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
-               <a href="https://www.linkedin.com/in/badmus-khadijah-damola-643438158/">
-                <svg stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 448 512"
-                  height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M100.28
+                     57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              ></path></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/badmus-khadijah-damola-643438158/"
+          >
+            <svg
+              stroke="currentColor"
+              fill="black"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100.28
                   448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1
                    54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 
-                    61.9 111.28 142.3V448z"></path></svg></a>
-           </div>
-              
+                    61.9 111.28 142.3V448z"
+              ></path></svg
+          ></a>
+        </div>
       </section>
     </main>
   </body>
